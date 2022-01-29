@@ -1,0 +1,23 @@
+*{
+    font-family: 'Roboto Condensed', sans-serif; 
+}
+
+#logo{
+    height: 10vw;
+}
+
+li{
+    list-style-type: none;
+    display: inline-block;
+     padding-right:2vw;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+   
+}
+
+input{
+    border-radius: 25px;
+}
