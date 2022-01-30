@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html id="bg">
+    <head>
+        <title>Stock Market</title>
+        <link href ="style.css" rel="stylesheet">
+        <link href="css/all.css" rel="stylesheet">
+        <link href="css/fontawesome.css" rel="stylesheet">
+        <link href="css/brands.css" rel="stylesheet">
+        <link href="css/solid.css" rel="stylesheet">
+        <script defer src="js/all.js"></script>
+        <script defer src="js/brands.js"></script>
+        <script defer src="js/solid.js"></script>
+        <script defer src="js/fontawesome.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+<!--Nav Bar-->
+<div class="Bar">
+    
+<a href="index.html"><img src="sample-logo.png" style="width:10vw;"></a>
+    
+<div style="flex-basis: 80%;text-align: center;">
+<form style="position: relative;">
+    <input id="input" type="text" placeholder="Begin Your Financial Journey">
+    <button class="s-btns" style="font-size: 20px;" type="submit"><i class="fas fa-search-plus">&#xf00e;</i></button>
+</form>
+</div>
+
+<!--    c  -->
+    <button  class="s-btns" style="font-size: 20px;" onclick="menutoggle()"><i class="fas fa-user">&#xf007;</i>
+    </button>
+</div>
+
+<nav>
+    <ul id="MenuItems">
+        <li>Log In</li>
+        <li> Sign Up</li>
+        <li> Some</li>
+    </ul>
+    </nav>
+<!--First Div-->
+        <img src=s-banner.png style="width:100vw;">
+        <div style="display: flex;justify-content: center;justify-content: space-around;height:300px;padding-bottom: 50px;">
+            <div style="display:flex;flex-direction: column; flex-basis: 30%;border-radius: 25px;background-color: black;justify-content: space-around;">
+                <button style="flex-basis: 20%;border-radius: 25px;font-size:1em;">Trading course</button>
+                <button style="flex-basis: 20%;border-radius: 25px;font-size:1em;">investing</button>
+                <button style="flex-basis: 20%;border-radius: 25px;font-size:1em;">Management</button>
+                
+            </div>
+            <div style="flex-basis: 30%;display:flex;flex-direction: column; flex-basis: 30%;border-radius: 25px;justify-content: space-around;background-color: black">
+                <button style="flex-basis: 20%;border-radius: 25px;font-size:1em;">Weekly Trades</button>
+                <button style="flex-basis: 20%;border-radius: 25px;font-size:1em;">Top Investments </button>
+                <button style="flex-basis: 20%;border-radius: 25px;font-size:1em;">Market News</button>
+            </div>
+        </div>
+       
+
+<!-- Footer-->
+    <div style="background-color: navy;height:70px;display: flex;flex-direction: column;text-align: center;padding: 0;flex-basis: 50;width:100vw;">
+    
+    <h3 style="color: white;margin: 5px;">CONNECT WITH US!</h3>
+    <div style="display:flex;padding-right: 100px;font-size: 20px;justify-content: center;padding: 0;">
+    <button class="s-btns" style="font-size: 1em;padding-right: 20px;color: white"><i class="fab fa-instagram">&#xf16d;</i></button>
+    <button class="s-btns" style="font-size: 1em;padding-right: 20px;color: white"><i class="fab fa-facebook-f">&#xf39e;</i></button>
+    <button class="s-btns" style="font-size: 1em;padding-right: 20px;color: white"><i class="fab fa-twitter">&#xf099;</i></button>
+    <button  class="s-btns" style="font-size: 1em;padding-right: 20px;color: white"><i class="fab fa-linkedin">&#xf08c;</i></button>
+    </div>
+</div>
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight ="0px";
+    
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px"){
+            MenuItems.style.maxHeight = "200px";
+        }
+        else{
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+    
+</script>
+<!--End of Homepage-->
+    
+    </body>
+</html>
