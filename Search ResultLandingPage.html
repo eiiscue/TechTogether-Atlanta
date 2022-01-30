@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html >
+<head>
+      <head>
+        <title>Log In Page</title>
+        <link href="style.css" rel="stylesheet">
+    
+        <link href="css/all.css" rel="stylesheet">
+        <link href="css/fontawesome.css" rel="stylesheet">
+        <link href="css/brands.css" rel="stylesheet">
+        <link href="css/solid.css" rel="stylesheet">
+        <script defer src="js/all.js"></script>
+        <script defer src="js/brands.js"></script>
+        <script defer src="js/solid.js"></script>
+        <script defer src="js/fontawesome.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+        <style>
+            input{
+                flex-basis: 10%;
+                border-radius: 25px;
+                width: 300px;
+            }
+            #user{
+                color: blue;
+            }
+            #user:hover{
+                text-decoration:underline;
+            }
+    
+        </style>
+    </head>
+    <body>
+        <!--Nav Div-->
+<div class="Bar">
+    
+    <a href=home.html><img src="sample-logo.png" style="width:10vw;"></a>
+    
+<div style="flex-basis: 80%;text-align: center;">
+<form style="position: relative;">
+    <input id="input" type="text" placeholder="Begin Your Financial Journey">
+    <button class="s-btns" style="font-size: 20px;" type="submit"><i class="fas fa-search-plus">&#xf00e;</i></button>
+</form>
+</div>
+
+<!--    c  -->
+    <button  class="s-btns" style="font-size: 20px;" onclick="menutoggle()"><i class="fas fa-user">&#xf007;</i>
+    </button>
+</div>
+
+<nav>
+    <ul id="MenuItems">
+       <li><a href="sign-up.html">Sign Up</a></li>
+        <li><a href="log-in.html"> Log In</a></li>
+        <li><a href="stock-market.html">Stock Market</a></li>
+    </ul>
+    </nav>
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight ="0px";
+    
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px"){
+            MenuItems.style.maxHeight = "200px";
+        }
+        else{
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+    
+</script>
+<!--End of Homepage-->
+
+<!--Second Main Div-->
+<div id="m-img" style="display: flex;flex-direction: row;width: 100vw;flex-basis: 50%;height: fit-content;">
+    
+</div>
+
+ <div id = "image" style ="display: block;" >
+        <img src="SearchResultsTelescope.png"   width = "100%">
+</div>
+
+<div id="m-img">
+    <center> 
+        Make your search more specific!
+            <h1> Did you mean?</h1>
+        </center>  
+    <div style="display: flex;flex-direction: column;padding: 20px">
+        <button style="border-radius: 25px;flex-basis: 30%;">
+        What is CryptoCurrency ? PLEASE EDIT THIS BASED ON THE KEYWORD ENTERED 
+        </button>
+     </div>
+    <div style="display: flex;flex-direction: column;padding: 20px">
+    <button style="border-radius: 25px;flex-basis: 30%;">
+        Latest News 
+        </button>
+    </div>
+    <div style="display: flex;flex-direction: column;padding:20px;">
+        <button style="border-radius: 25px;flex-basis: 30%;">
+        How does it work? 
+        </button>
+    </div>
+    <div style="display: flex;flex-direction: column;padding: 20px">
+        <button style="border-radius: 25px;flex-basis: 30%;">
+        Skip and See Summary
+        </button>
+    </div>
+   
+    
+</div>
+    
+

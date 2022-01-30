@@ -7,6 +7,10 @@ display:flex;
 flex-direction:row;
 align-items: center;
 }
+a{
+    color: white;
+    text-decoration: none;
+}
 
 .Search{
     flex-grow: 4;
@@ -47,8 +51,15 @@ nav ul li{
 buttons{
     background-color: navy;
     padding-bottom: 10px;
+    
 }
-
+button{
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color:w;
+}
 .img-btn{
 border-radius: 25px;
 width:70%;
