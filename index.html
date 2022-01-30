@@ -3,34 +3,87 @@
 <head>
     <title> Financial Literacy</title>
     <link href ="style.css" rel="stylesheet">
+        <link href="css/all.css" rel="stylesheet">
+        <link href="css/fontawesome.css" rel="stylesheet">
+        <link href="css/brands.css" rel="stylesheet">
+        <link href="css/solid.css" rel="stylesheet">
+        <script defer src="js/all.js"></script>
+        <script defer src="js/brands.js"></script>
+        <script defer src="js/solid.js"></script>
+        <script defer src="js/fontawesome.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
 </head>
 <body id="homepage">
-    <?PHP
-        echo shell_exec("python script.py");
-    ?>
-
-<!--
-       
-        <div style="display: flex;height: 70px;">
-            <img src="sample-logo.png" style="width: 100px; height: auto;flex-grow: .5;">
-                <div style="display: flex;flex-direction: row;align-items: center;flex-grow: 4;justify-content: center;">
-                    <li><a>Simulator</a></li>
-                    <li><a>Budget Tracker </a></li>
-                    <li><a>Contact Us</a></li>
-                    <input type="text" autofocus="on">
-                    <input type="submit" value="Search">
-                     <li><a></a></li>
-                </div>
-                
-        </div>
-    <img src="landing-img.png">
-    <div style="position: relative;top: -50px;background-color: red;padding: 30vw;">
-        writing
+<div class="Bar">
+    
+<!--    A  -->
+    <img src="sample-logo.png" style="width:10vw;">
+    
+<!--    A  -->
+<div class="Search">
+<form >
+    <input id="input" type="text" placeholder="Begin Your Financial Journey">
+    <button type="submit"><i class="fas fa-search-plus">&#xf00e;</i></button>
+</form>
+</div>
+<!--    A  -->
+    <button onclick="menutoggle()"><i class="fas fa-user">&#xf007;</i>
+    </button>
+</div>
+<nav>
+    <ul id="MenuItems">
+        <li>Log In</li>
+        <li> Sign Up</li>
+        <li> Some</li>
+    </ul>
+    </nav>
+<!--Second Main Div-->
+<div id="m-img" style="display: flex;flex-direction: row;width: 100vw;flex-basis: 50%;height: fit-content;">
+    <div style="display: flex;flex-direction: column;">
+        <p style="text-align: center;">Financial <br>Literacy <br> At The Comfort <br>Of Your Home</p>
+        <button style="align-self: center;" class="img-btn">How to Track Your Budget</button>
+        <button style="align-self: center;" class="img-btn">Learn More About Finance</button>
     </div>
--->
+    <div style="display:flex;flex-end;">
+        <img src="main-img.jpg" style="max-width: 100%; max-height: 600px;">
+    </div>
+    
+</div>
+<!--Third Main Div-->
+<p style="text-align: center;justify-self: center;">Through experimental learning provided by the Budget Tracker and Stock Market Literacy,stydents will grasps many concepts such as:  </p>
+<div style="margin: 0 5vw; background-color:aqua;display: flex;flex-direction: row;flex-basis:30%;min-height: 200px;position: relative;">    
+    <div style="position:absolute;top:150px;background-color: red;">hello</div>
+    <div style="position: absolute;">2</div>
+    <div style="position: absolute;">3</div>
+    
+</div>
+<!--Footer-->
+<div style="background-color: navy;height:100px;display: flex;flex-direction: column;text-align: center;">
+    <h1>Connect With Us</h1>
+    <button><i class="fab fa-instagram">&#xf16d;</i></button>
+    <button><i class="fab fa-facebook-f">&#xf39e;</i></button>
+    <button><i class="fab fa-twitter">&#xf099;</i></button>
+    <button><i class="fab fa-linkedin">&#xf08c;</i></button>
+</div>
+    
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight ="0px";
+    
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px"){
+            MenuItems.style.maxHeight = "200px";
+        }
+        else{
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+    
+</script>
+    
 
 </body>
+        
 </html>
