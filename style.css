@@ -1,5 +1,5 @@
 *{
-    font-family: 'Roboto Condensed', sans-serif; 
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 .Bar{
@@ -15,8 +15,10 @@ align-items: center;
 }
 
 #input{
-flex-grow:2;
-  border:none;
+    border-radius: 25px;
+    width:50vw;
+    height:25px;
+    
 }
 
 nav ul{
@@ -38,16 +40,37 @@ nav ul li{
     color: aliceblue;
 }
 
-#m-img{
-height: 50vh;
-background-color: grey;
+#bg{
+    background-color: lavender;
 }
+
+buttons{
+    background-color: navy;
+    padding-bottom: 10px;
+}
+
 .img-btn{
 border-radius: 25px;
 width:70%;
 height:20%; 
 border:none;
 }
-button{
+.s-btns {
     border:none;
+    background: none;
+}
+
+.container {
+  position: relative;
+}
+
+/* Bottom right text */
+.text-block {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
 }
