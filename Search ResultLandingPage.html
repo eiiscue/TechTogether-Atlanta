@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html >
 <head>
-    <title> Financial Literacy</title>
-    <link href ="learncrypto.css" rel="stylesheet">
+      <head>
+        <title>Log In Page</title>
+        <link href="style.css" rel="stylesheet">
+    
         <link href="css/all.css" rel="stylesheet">
         <link href="css/fontawesome.css" rel="stylesheet">
         <link href="css/brands.css" rel="stylesheet">
@@ -14,14 +16,26 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
-</head>
+        <style>
+            input{
+                flex-basis: 10%;
+                border-radius: 25px;
+                width: 300px;
+            }
+            #user{
+                color: blue;
+            }
+            #user:hover{
+                text-decoration:underline;
+            }
     
-<body id="Learn 2 Crypto",>
-
-<!--Nav Bar-->
+        </style>
+    </head>
+    <body>
+        <!--Nav Div-->
 <div class="Bar">
     
-<a href="index.html"><img src="sample-logo.png" style="width:10vw;"></a>
+    <a href=home.html><img src="sample-logo.png" style="width:10vw;"></a>
     
 <div style="flex-basis: 80%;text-align: center;">
 <form style="position: relative;">
@@ -37,12 +51,11 @@
 
 <nav>
     <ul id="MenuItems">
-        <li>Log In</li>
-        <li> Sign Up</li>
-        <li> Some</li>
+       <li><a href="sign-up.html">Sign Up</a></li>
+        <li><a href="log-in.html"> Log In</a></li>
+        <li><a href="stock-market.html">Stock Market</a></li>
     </ul>
     </nav>
-
 <script>
     var MenuItems = document.getElementById("MenuItems");
     MenuItems.style.maxHeight ="0px";
@@ -57,13 +70,10 @@
     }
     
 </script>
+<!--End of Homepage-->
 
 <!--Second Main Div-->
 <div id="m-img" style="display: flex;flex-direction: row;width: 100vw;flex-basis: 50%;height: fit-content;">
-    <div style="display: flex;flex-direction: column;">
-        <p style="text-align: center;">Financial <br>Literacy <br> At The Comfort <br>Of Your Home</p>
-        
-   </div>
     
 </div>
 
@@ -77,22 +87,22 @@
             <h1> Did you mean?</h1>
         </center>  
     <div style="display: flex;flex-direction: column;padding: 20px">
-        <button style="border-radius: 25px">
+        <button style="border-radius: 25px;flex-basis: 30%;">
         What is CryptoCurrency ? PLEASE EDIT THIS BASED ON THE KEYWORD ENTERED 
         </button>
      </div>
     <div style="display: flex;flex-direction: column;padding: 20px">
-    <button style="border-radius: 25px">
+    <button style="border-radius: 25px;flex-basis: 30%;">
         Latest News 
         </button>
     </div>
-    <div style="display: flex;flex-direction: column;padding:20px">
-        <button style="border-radius: 25px">
+    <div style="display: flex;flex-direction: column;padding:20px;">
+        <button style="border-radius: 25px;flex-basis: 30%;">
         How does it work? 
         </button>
     </div>
     <div style="display: flex;flex-direction: column;padding: 20px">
-        <button style="border-radius: 25px">
+        <button style="border-radius: 25px;flex-basis: 30%;">
         Skip and See Summary
         </button>
     </div>
